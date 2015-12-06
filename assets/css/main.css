@@ -1988,18 +1988,15 @@
 	input[type="reset"],
 	button,
 	.button {
-		position: relative;
-		display: inline-block;
-		background: #df7366;
-		color: #fff;
-		text-align: center;
-		border-radius: 0.5em;
-		text-decoration: none;
-		padding: 0.65em 3em 0.65em 3em;
-		border: 0;
-		cursor: pointer;
-		outline: 0;
-		font-weight: 300;
+		width: 5em;
+		height: 5em;
+		line-height: 4.5em;
+		padding: 0;
+		background-image: url("images/dark-arrow.svg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-indent: -10em;
+		overflow: hidden;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -2012,7 +2009,7 @@
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #ef8376;
+			background-color: #ef8376;
 		}
 
 		input[type="button"].alt,
