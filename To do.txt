@@ -1,6 +1,7 @@
-Sort out registration and competiton info
-
-capital for content titles?
-
 payment protocol
 
+add sponsors
+
+confirm form
+
+share form
