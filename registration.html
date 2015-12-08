@@ -9,9 +9,17 @@
 		<title>Swimfest 2016</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+		<link rel="stylesheet" href="assets/css/main.css" /><!-- overwrites bootstrap style sheet -->
+		
+		
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link rel="icon" href="images/Logo1.png">
 	</head>
 	<body class="no-sidebar">
@@ -23,7 +31,12 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">SWIMFEST 2016</a></h1>
+								<h1>Swimfest 2016</h1>
+								<!--
+								<h1><a href="index.html" id="logo">
+									<img src="images/home logo.png" height="40%" width="40%">
+								</a></h1>
+								-->
 							</header>
 						</div>
 
@@ -53,25 +66,43 @@
 								<header>
 									<h2><a href="#">MASS SWIM</a></h2>
 									<br />
-									<h3>Saturday, 27 Feb 2016, 0900 hrs</h3>
+									<h3>Friday, 26 Feb 2016</h3>
 									<br />
-									<h3>to</h3>
+									<h3>0900 hrs to 1200 hrs</h3>
 									<br />
-									<h3>Saturday, 27 Feb 2016, 1200 hrs</h3>
+									<h6>*Includes complementary confidence jump during Mass Swim*</h6>
 									<br />
-									<br />
-									<h3><a href="http://goo.gl/forms/VNtmW08iQE" target="_blank">Register Here</a></h3>
+									
+									<!-- Link to trigger Modal -->
+									<a data-toggle="modal" href="#myModal"><h3>Register Here</h3></a>
+									
+									<!-- Modal -->
+									<div id="myModal" class="modal fade" role="dialog" hidden="true">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<h2 class="modal-title">Registration for Mass Swim</h4>
+												</div>
+												<div class="modal-body">
+													<iframe src="https://docs.google.com/forms/d/1AWIGUoc7kBpOpb0zFV4NqVbdd6XjlPnmM4ucxFgvFuk/viewform?embedded=true" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+												</div>
+												<div class="modal-footer">
+													<a data-dismiss="modal">Close</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
 								</header>
 							</article>
 							<article class="6u 12u(mobile) special">
 								<header>
 									<h2><a href="#">OVERNIGHT SWIM</a></h2>
 									<br />
-									<h3>Saturday, 27 Feb 2016, 2200 hrs</h3>
+									<h3>Friday, 26 Feb 2016 to Saturday, 27 Feb 2016 </h3>
 									<br />
-									<h3>to</h3>
-									<br />
-									<h3>Sunday, 28 Feb 2016, 0600 hrs</h3>
+									<h3>2200 hrs to 0600 hrs</h3>
 									<br />
 									<br />
 									<h3>Only by invitation</h3>
@@ -116,6 +147,7 @@
 		</div>
 
 		<!-- Scripts -->
+			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
